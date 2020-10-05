@@ -19,10 +19,7 @@ function Header() {
   return (
     <div className="header">
       <div className="left">
-        <img
-          src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=40&h=40"
-          alt="facebook-logo"
-        />
+        <img src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=40&h=40" alt="facebook-logo" />
         <div className="input-div">
           <FontAwesomeIcon icon={faSearch} />
           <input placeholder="Search" />
@@ -36,7 +33,10 @@ function Header() {
         <FontAwesomeIcon size={"lg"} icon={faUsers} />
       </div>
       <div className="right">
-        <img src="https://placehold.it/35" alt="avatar" />
+        <div className="user">
+          <img src="https://placehold.it/35" alt="avatar" />
+          <div className="username">user name</div>
+        </div>
         <FontAwesomeIcon icon={faComments} />
         <FontAwesomeIcon icon={faBell} />
         <FontAwesomeIcon icon={faAngleDown} />

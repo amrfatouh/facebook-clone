@@ -1,0 +1,20 @@
+.sidebar-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-row img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.sidebar-row .icon {
+  margin-right: 10px;
+  color: #1778f2;
+}
+
+.sidebar-row .text {
+  font-weight: bold;
+  color: #555;
+}
