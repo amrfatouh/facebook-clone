@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+}
+
+.header > * {
+  display: flex;
+  align-items: center;
+}
+
+.header .svg-inline--fa {
+  color: #777;
+}
+
+.header .left {
+  width: 20%;
+}
+
+.header .left img {
+  margin-right: 10px;
+}
+
+.header .left .input-div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #f0f0f5;
+  padding: 7px 15px;
+  border-radius: 999px;
+}
+
+.header .left .svg-inline--fa {
+  font-size: 20px;
+  color: #777;
+}
+
+.header .left input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+.header .center {
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.header .center .svg-inline--fa {
+  width: 50px;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.header .center .svg-inline--fa:hover {
+  color: #1778f2;
+}
+
+.header .center .svg-inline--fa.active {
+  border-bottom: 4px solid #1778f2;
+  color: #1778f2;
+}
+
+.header .right {
+  width: 20%;
+  justify-content: space-evenly;
+}
+
+.header .right img {
+  margin-right: 10px;
+  border-radius: 50%;
+}
