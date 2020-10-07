@@ -1,13 +1,18 @@
 import { faComments, faFlag, faLaptopMedical, faPlayCircle, faSearchDollar, faUsers } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { useContext } from "react";
 import "./Sidebar.css";
 import SidebarRow from "./SidebarRow";
+import { StateContext } from "./StateContext";
 
 function Sidebar() {
+  let { state } = useContext(StateContext);
+  let user = state.user;
+
   return (
     <div className="sidebar">
-      <SidebarRow title="user name" src="https://placehold.it/200" />
+      <SidebarRow title={user.displayName} src={user.photoURL} />
       <SidebarRow title="COVID-19 information center" Icon={<FontAwesomeIcon icon={faLaptopMedical} size={"lg"} />} />
       <SidebarRow title="Pages" Icon={<FontAwesomeIcon icon={faFlag} size={"lg"} />} />
       <SidebarRow title="Friends" Icon={<FontAwesomeIcon icon={faUsers} size={"lg"} />} />

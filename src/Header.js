@@ -13,9 +13,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { useContext } from "react";
 import "./Header.css";
+import { StateContext } from "./StateContext";
 
 function Header() {
+  let { state } = useContext(StateContext);
+
   return (
     <div className="header">
       <div className="left">
@@ -34,8 +38,8 @@ function Header() {
       </div>
       <div className="right">
         <div className="user">
-          <img src="https://placehold.it/35" alt="avatar" />
-          <div className="username">user name</div>
+          <img src={state.user.photoURL} alt="avatar" />
+          <div className="username">{state.user.displayName}</div>
         </div>
         <FontAwesomeIcon icon={faComments} />
         <FontAwesomeIcon icon={faBell} />

@@ -76,7 +76,8 @@
   font-weight: bold;
 }
 
-.header .right img {
+.header .right .user img {
   margin-right: 10px;
   border-radius: 50%;
+  width: 40px;
 }
