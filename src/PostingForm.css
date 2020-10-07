@@ -20,6 +20,7 @@
   border: none;
   outline: none;
   background-color: #eef1f6;
+  font-family: "Roboto", sans-serif;
 }
 
 .posting-form input {
