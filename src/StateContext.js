@@ -10,7 +10,7 @@ function StateContextProvider({ children }) {
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
-      console.log(user);
+      setState({ ...state, user });
     });
   }, []);
 
