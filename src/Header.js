@@ -18,12 +18,15 @@ import "./Header.css";
 import { StateContext } from "./StateContext";
 
 function Header() {
-  let { state } = useContext(StateContext);
+  let { user } = useContext(StateContext);
 
   return (
     <div className="header">
       <div className="left">
-        <img src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=40&h=40" alt="facebook-logo" />
+        <img
+          src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=40&h=40"
+          alt="facebook-logo"
+        />
         <div className="input-div">
           <FontAwesomeIcon icon={faSearch} />
           <input placeholder="Search" />
@@ -38,8 +41,8 @@ function Header() {
       </div>
       <div className="right">
         <div className="user">
-          <img src={state.user.photoURL} alt="avatar" />
-          <div className="username">{state.user.displayName}</div>
+          <img src={user.photoURL} alt="avatar" />
+          <div className="username">{user.displayName}</div>
         </div>
         <FontAwesomeIcon icon={faComments} />
         <FontAwesomeIcon icon={faBell} />

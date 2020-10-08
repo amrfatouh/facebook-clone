@@ -16,11 +16,11 @@ function App() {
     - when using onAuthStateChanged --> use it in the App component (or in the context) but not in any other component
   */
 
-  let { state } = useContext(StateContext);
+  let { user, posts } = useContext(StateContext);
 
   return (
     <div className="app">
-      {state.user ? (
+      {user ? (
         <>
           <Header />
           <div className="page">
